@@ -21,7 +21,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "import/no-anonymous-default-export": ["error", {
+      "allowArrowFunction": true
+    }]
   },
   "browserslist": {
     "production": [
