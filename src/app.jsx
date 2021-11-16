@@ -1,13 +1,13 @@
 import './app.css'
 import React from "react";
 
-import Primeiro from './components/first.jsx'
-import ComParametro from './components/ComParametro'
-import ComFilhos from './components/ComFilhos'
+import Primeiro from './components/basicos/first.jsx'
+import ComParametro from './components/basicos/ComParametro'
+import ComFilhos from './components/basicos/ComFilhos'
 import Card from './components/layout/card'
-import Repeticao from './components/Repeticao';
-import Condicional from './components/Condicional';
-import CondicionalComIf from './components/CondicionalComIf';
+import Repeticao from './components/basicos/Repeticao';
+import Condicional from './components/basicos/Condicional';
+import CondicionalComIf from './components/basicos/CondicionalComIf';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => (
