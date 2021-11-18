@@ -8,20 +8,22 @@ import Card from './components/layout/card'
 import Repeticao from './components/basicos/Repeticao';
 import Condicional from './components/basicos/Condicional';
 import CondicionalComIf from './components/basicos/CondicionalComIf';
+import Pai from './components/comunicacao-direta/Pai'
+import Super from './components/comunicacao-direta/indireta/Super'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => (
     <div className="App">
 
-        <Card titulo="#01 Primeiro Componente">
+        <Card titulo="#01 Primeiro Componente" color="#6b4351">
             <Primeiro />
         </Card>
 
-        <Card titulo="#02 Componente com Parametro">
+        <Card titulo="#02 Componente com Parametro" color="#983d3f">
             <ComParametro titulo="Opa" subtitulo="Epa" />
         </Card>
 
-        <Card titulo="#03 Componente com Filhos">
+        <Card titulo="#03 Componente com Filhos" color="#efc15f">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
@@ -32,19 +34,25 @@ export default props => (
             </ComFilhos>
         </Card>
 
-        <Card titulo="#04 Componente com Repetição">
+        <Card titulo="#04 Componente com Repetição" color="#063354">
             <Repeticao></Repeticao>
         </Card>
 
-        <Card titulo="#05 Condicional v1">
+        <Card titulo="#05 Condicional v1" color="#2b7b62">
             <Condicional numero={10}></Condicional>
         </Card>
 
-        <Card titulo="#06 Condicional v2">
+        <Card titulo="#06 Condicional v2" color="#ae4553">
             <CondicionalComIf numero={11}></CondicionalComIf>
         </Card>
 
+        <Card titulo="#07 Comunicação Direta" color="#ae4553">
+            <Pai sobrenome='Bezerra'></Pai>
+        </Card>
 
+        <Card titulo="#08 Comunicação Indireta" color="#ae4553">
+            <Super></Super>
+        </Card>
 
     </div>
 );
