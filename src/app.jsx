@@ -10,6 +10,7 @@ import Condicional from './components/basicos/Condicional';
 import CondicionalComIf from './components/basicos/CondicionalComIf';
 import Pai from './components/comunicacao-direta/Pai'
 import Super from './components/comunicacao-direta/indireta/Super'
+import Input from './components/form/input'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => (
@@ -42,17 +43,20 @@ export default props => (
             <Condicional numero={10}></Condicional>
         </Card>
 
-        <Card titulo="#06 Condicional v2" color="#ae4553">
+        <Card titulo="#06 Condicional v2" color="#6b4351">
             <CondicionalComIf numero={11}></CondicionalComIf>
         </Card>
 
-        <Card titulo="#07 Comunicação Direta" color="#ae4553">
+        <Card titulo="#07 Comunicação Direta" color="#983d3f">
             <Pai sobrenome='Bezerra'></Pai>
         </Card>
 
-        <Card titulo="#08 Comunicação Indireta" color="#ae4553">
+        <Card titulo="#08 Comunicação Indireta" color="#efc15f">
             <Super></Super>
         </Card>
 
+        <Card titulo="#09 input" color="#063354">
+            <Input></Input>
+        </Card>
     </div>
 );

@@ -2,11 +2,13 @@ import React from "react";
 
 export default (props) => {
 
+  function acao(){
+    props.clicar(Math.random().toFixed(2) *100, 'Gerado:')
+  }
+
   return (
     <div>
-      <button onClick={() => {
-        props.clicar(Math.random())
-      }}>Alterar</button>
+      <button onClick={acao}>Alterar</button>
     </div>
 
   )
