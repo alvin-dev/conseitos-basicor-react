@@ -11,11 +11,14 @@ import CondicionalComIf from './components/basicos/CondicionalComIf';
 import Pai from './components/comunicacao-direta/Pai'
 import Super from './components/comunicacao-direta/indireta/Super'
 import Input from './components/form/input'
+import Contador from './components/contador/Contador'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => (
     <div className="App">
+        <h1>Fundamentos React</h1>
 
+        <div className="Cards">
         <Card titulo="#01 Primeiro Componente" color="#6b4351">
             <Primeiro />
         </Card>
@@ -58,5 +61,11 @@ export default props => (
         <Card titulo="#09 input" color="#063354">
             <Input></Input>
         </Card>
+        
+        <Card titulo="#10 Contador" color="#2b7b62">
+            <Contador passo={10} valor={100}></Contador>
+        </Card>
+        </div>
+        
     </div>
 );
