@@ -12,6 +12,7 @@ import Pai from './components/comunicacao-direta/Pai'
 import Super from './components/comunicacao-direta/indireta/Super'
 import Input from './components/form/input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => (
@@ -65,6 +66,12 @@ export default props => (
         <Card titulo="#10 Contador" color="#2b7b62">
             <Contador passo={10} valor={100}></Contador>
         </Card>
+
+        <Card titulo="#11 Mega" color="#6b4351">
+            <Mega qtdeNumero={8}></Mega>
+        </Card>
+
+
         </div>
         
     </div>
