@@ -12,8 +12,11 @@ export default (props) => {
   }
 
   function gerarNumero() {
-    
-    setNumeros([1, 2, 3, 4, 5, 6, 7, 8])
+    const novoArray = Array(props.qtdeNumero)
+    .fill(0)
+    .reduce(a => [...a, gerarNumeroNãoContido(a)], [])
+    .sort((a, b) => a - b)
+    setNumeros(novoArray)
   } 
 
   return (
